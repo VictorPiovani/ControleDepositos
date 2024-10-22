@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Depósitos</title>
+    <!-- Vinculando o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
     <script src="depositos.js" defer></script>
 </head>
 <body>
-    <h1>Controle de Depósitos</h1>
+    <div class="container">
+        <h1>Controle de Depósitos</h1>
 
-    <form id="depositForm">
-        <label for="depositValue">Valor do Depósito: </label>
-        <input type="number" id="depositValue" min="1" max="200" required>
-        <button type="submit">Confirmar Depósito</button>
-    </form>
+        <form id="depositForm" class="form-deposit">
+            <label for="depositValue">Valor do Depósito: </label>
+            <input type="number" id="depositValue" min="1" max="200" required placeholder="Ex: 50">
+            <button type="submit">Confirmar Depósito</button>
+        </form>
 
-    <h3>Depósitos já feitos:</h3>
-    <ul id="depositedValues"></ul>
+        <h3>Depósitos já feitos:</h3>
+        <ul id="depositedValues" class="deposited-values"></ul>
 
-    <h3>Soma total dos depósitos: R$<span id="totalSum">0</span></h3>
+        <h3>Soma total dos depósitos: R$<span id="totalSum">0</span></h3>
 
-    <!-- Botão para limpar cache/local storage -->
-    <button id="clearCache">Limpar Depósitos</button>
+        <!-- Campo para inserir hash e carregar dados -->
+        <div class="hash-section">
+            <h3>Carregar depósitos a partir de um hash:</h3>
+            <input type="text" id="inputHash" placeholder="Insira o hash">
+            <button id="loadFromHash">Carregar Depósitos</button>
+        </div>
+
+        <!-- Botão para limpar cache/local storage -->
+        <button id="clearCache" class="btn-clear">Limpar Depósitos</button>
+    </div>
 </body>
 </html>
