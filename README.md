@@ -29,7 +29,7 @@ Para começar a usar este projeto, você pode simplesmente clonar o repositório
 ```
 bash
 
-git clone https://github.com/seu-usuario/controle-de-depositos.git
+git clone https://github.com/VictorPiovani/ControleDepositos.git
 
 ```
 
