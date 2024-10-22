@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const formattedTime = now.toLocaleTimeString();
 
             // Enviar comprovante via WhatsApp (apenas link gerado)
-            const phoneNumber = "558199999999"; // Número do WhatsApp
+            const phoneNumber = "5535998153363"; // Número do WhatsApp
             const message = `Depósito confirmado: R$${value} em ${formattedDate} às ${formattedTime}. Soma total: R$${totalSum}. Hash: ${hash}`;
             const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
