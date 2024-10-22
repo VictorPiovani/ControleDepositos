@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Hash dos depósitos:", hash);
 
             // Enviar comprovante via WhatsApp (apenas link gerado)
-            const phoneNumber = "558199999999"; // Número do WhatsApp
+            const phoneNumber = "5535998153363"; // Número do WhatsApp
             const message = `Depósito confirmado: R$${value}. Hash: ${hash}`;
             const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
